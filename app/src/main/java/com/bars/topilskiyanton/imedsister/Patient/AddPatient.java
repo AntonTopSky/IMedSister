@@ -164,6 +164,7 @@ public class AddPatient extends AppCompatActivity {
         return true;
     }
 
+    // Вывод сообщения
     private void errorMessage(String message) {
         if (flagError) {
             errorText.setText(message);
