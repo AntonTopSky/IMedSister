@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        android:id="@+id/titleAddWard"/>
+
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp">
+
+
+        <TextView
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:text="@string/numWard"
+            android:textColor="@color/colorBlack" />
+
+        <EditText
+            android:id="@+id/add_numWard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:hint=" " />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp">
+
+        <TextView
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:text="@string/capacityWard"
+            android:textColor="@color/colorBlack" />
+
+        <EditText
+            android:id="@+id/add_capacityWard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:hint=" " />
+    </LinearLayout>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/add_gender_female"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:checked="true"
+            android:text="@string/genderFemale"
+            android:textColor="@color/colorBlack"
+            android:visibility="visible" />
+
+        <RadioButton
+            android:id="@+id/add_gender_male"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/genderMale"
+            android:textColor="@color/colorBlack"
+            android:visibility="visible" />
+    </RadioGroup>
+
+    <LinearLayout>
+
+        <Button
+            android:id="@+id/saveWard"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="@string/buttonOK"
+            android:enabled="false"/>
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="@string/cancel" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/colorRed"/>
+
+</TableLayout>

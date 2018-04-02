@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">IMedSister</string>
+    <string name="writer" />
+    <string name="numberWard">Ward №1</string>
+    <string name="numWard">Номер палаты</string>
+    <string name="capacityWard">Количество мест</string>
+    <string name="genderMale">Мужская</string>
+    <string name="genderFemale">Женская</string>
+    <string name="buttonOK">ОК</string>
+    <string name="cancel">Отмена</string>
+    <string name="button_yes">Да</string>
+    <string name="surname">Фамилия</string>
+    <string name="enterSurname">Введите фамилию</string>
+    <string name="title_add_patient">Создание карточки пациента</string>
+    <string name="name">Имя</string>
+    <string name="enterName">Введите имя</string>
+    <string name="secname">Отчество</string>
+    <string name="enterSecname">Введите отчество</string>
+    <string name="dateOfBirth">Дата рождения</string>
+    <string name="enterDateOfBirth">Введите дату рождения</string>
+    <string name="gender">Пол</string>
+    <string name="male">Мужской</string>
+    <string name="female">Женский</string>
+    <string name="adress">Адрес</string>
+    <string name="enterAdress">Введите адрес</string>
+    <string name="additional_info">Дополнительная информация</string>
+    <string name="diagnosis">Диагноз</string>
+</resources>

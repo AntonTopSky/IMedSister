@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@color/colorLightPink"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/namePatient"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Захарова Клавдия Семеновна"
+            android:textColor="@color/colorBlack"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/diagnoz_list"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:rotation="-45"
+            android:text="Гастрит,Цероз, Алкоголизм"
+            android:textSize="10sp" />
+
+        <TextView
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="Infopanel"
+            android:textSize="10sp" />
+
+        <TableLayout
+            android:id="@+id/treatment"
+            android:layout_width="15dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/kapel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="5dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/tablets" />
+
+            <ImageView
+                android:id="@+id/ukol"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="5dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ukol" />
+
+            <ImageView
+                android:id="@+id/tablets"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:gravity="center"
+                android:scaleType="centerCrop"
+                android:src="@drawable/kapel" />
+        </TableLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

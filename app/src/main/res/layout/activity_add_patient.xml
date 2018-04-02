@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_main">
+
+    <EditText
+        android:id="@+id/findInBase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/edit_text_style"
+        android:hint="Поиск по базе пациентов"
+        android:padding="10dp"
+        android:textSize="20sp" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/findInBase"
+        android:layout_margin="5dp"
+        android:background="@drawable/table_layout_style"
+        android:padding="5dp">
+
+        <EditText
+            android:id="@+id/surnamePatient"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:background="@color/colorWhite"
+            android:hint="@string/enterSurname"
+            android:paddingEnd="5dp"
+            android:paddingStart="5dp" />
+
+        <EditText
+            android:id="@+id/namePatient"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:background="@color/colorWhite"
+            android:hint="@string/enterName"
+            android:paddingEnd="5dp"
+            android:paddingStart="5dp" />
+
+        <EditText
+            android:id="@+id/secnamePatient"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:background="@color/colorWhite"
+            android:hint="@string/enterSecname"
+            android:paddingEnd="5dp"
+            android:paddingStart="5dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:text="@string/enterDateOfBirth"
+                android:textColor="@color/colorBlack"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/dateBirth"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="3dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/colorWhite"
+                android:hint="01.01.1900"
+                android:inputType="date"
+                android:maxLength="10"
+                android:paddingEnd="5dp"
+                android:paddingStart="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:text="г."
+                android:textColor="@color/colorBlack"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:text="@string/gender"
+                android:textColor="@color/colorBlack"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_weight="3"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/genderMale"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/colorPrimaryDark"
+                    android:checked="true"
+                    android:text="@string/male"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/genderFemale"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/colorAccent"
+                    android:text="@string/female"
+                    android:textSize="20sp" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/adressPatient"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="5dp"
+            android:background="@color/colorWhite"
+            android:gravity="start"
+            android:hint="@string/enterAdress"
+            android:paddingEnd="5dp"
+            android:paddingStart="5dp" />
+
+        <TextView
+            android:id="@+id/check_a_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/additional_info"
+            android:textAlignment="textEnd"
+            android:textColor="@color/colorBlue"
+            android:textSize="18sp" />
+
+        <TableLayout
+            android:id="@+id/dop_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:layout_marginStart="5dp"
+                        android:text="@string/diagnosis"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </TableLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <Button
+                android:id="@+id/buttonOk"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/buttonOK" />
+
+            <Button
+                android:id="@+id/buttonCancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/cancel" />
+
+        </LinearLayout>
+    </TableLayout>
+
+</RelativeLayout>
