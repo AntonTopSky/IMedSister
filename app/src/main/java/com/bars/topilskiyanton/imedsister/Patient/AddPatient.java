@@ -93,7 +93,7 @@ public class AddPatient extends AppCompatActivity {
             }
         });
 
-        //Отмена
+        //Отмена добавления
         buttonCancel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
